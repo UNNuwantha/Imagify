@@ -100,9 +100,47 @@ const AppContextProvider = (props) => {
         }
     }
 
+    const createCheckoutSession = async (planId) => {
+        try {
+            const { data } = await axios.post(backendUrl + '/api/payment/checkout-session', { planId }, {
+                headers: { token }
+            })
+
+            if (data.success && data.url) {
+                return data.url
+            }
+
+            toast.error(data.message || 'Could not initiate checkout')
+            return null
+        } catch (error) {
+            toast.error(error.response?.data?.message || 'Checkout failed')
+            return null
+        }
+    }
+
+    const finalizeCheckout = async (sessionId) => {
+        try {
+            const { data } = await axios.post(backendUrl + '/api/payment/checkout-success', { sessionId }, {
+                headers: { token }
+            })
+
+            if (data.success) {
+                setUser(prev => prev ? { ...prev, creditBalance: data.creditBalance } : null)
+                toast.success('Purchased successfully')
+                return data
+            }
+
+            toast.error(data.message || 'Could not finalize checkout')
+            return data
+        } catch (error) {
+            toast.error(error.response?.data?.message || 'Checkout finalize failed')
+            return null
+        }
+    }
+
     const value = {
         user, setUser, showLogin, setShowLogin,
-        login, register, logout, generateImage, token
+        login, register, logout, generateImage, createCheckoutSession, finalizeCheckout, token
     }
 
     return (
