@@ -1,5 +1,6 @@
 # 🚀 Imagify - AI-Powered Image Generation
 
+
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
@@ -9,6 +10,17 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 Transform your ideas into stunning visuals with Imagify! This full-stack web application leverages AI to generate high-quality images from text prompts. Users can create, view, and purchase credits to unlock unlimited creativity.
+
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img01.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img02.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img03.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img04.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img05.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img06.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img07.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img08.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img09.png?raw=true)
+![image alt](https://github.com/UNNuwantha/Imagify/blob/master/client/src/assets/img10.png?raw=true)
 
 ## ✨ Features
 
