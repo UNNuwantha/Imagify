@@ -1,7 +1,5 @@
 # 🚀 Imagify - AI-Powered Image Generation
 
-![Imagify Banner](https://via.placeholder.com/800x200/4F46E5/FFFFFF?text=Imagify+AI+Image+Generator)
-
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
