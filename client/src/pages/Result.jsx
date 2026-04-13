@@ -22,6 +22,11 @@ const Result = () => {
       return
     }
 
+    if (user.creditBalance <= 0) {
+      navigate('/buy')
+      return
+    }
+
     if (!input.trim()) {
       return
     }

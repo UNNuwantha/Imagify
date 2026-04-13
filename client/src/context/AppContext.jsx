@@ -87,6 +87,8 @@ const AppContextProvider = (props) => {
             })
 
             if (data.success) {
+                // Update user credit balance
+                setUser(prev => prev ? { ...prev, creditBalance: data.creditBalance } : null)
                 return data.resultImage
             } else {
                 toast.error(data.message)
