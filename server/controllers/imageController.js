@@ -21,6 +21,14 @@ export const generateImage = async (req, res) => {
             return res.status(404).json({ success: false, message: 'User not found' })
         }
 
+        if (user.creditBalance <= 0) {
+            return res.status(400).json({ success: false, message: 'Insufficient credits' })
+        }
+
+        // Deduct 1 credit
+        user.creditBalance -= 1
+        await user.save()
+
         const encodedPrompt = encodeURIComponent(prompt)
         const remoteImageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}`
 
